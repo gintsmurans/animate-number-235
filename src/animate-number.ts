@@ -40,7 +40,7 @@ export class AnimateNumber {
                 this.updateElement(`${currentValue}`);
                 requestAnimationFrame(animate);
             } else {
-                this.updateElement(`${currentValue}`);
+                this.updateElement(`${valueTo}`);
             }
         };
 
