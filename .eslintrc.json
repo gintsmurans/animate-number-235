@@ -1,0 +1,32 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": ["plugin:compat/recommended", "airbnb-base"],
+    "globals": {
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "rules": {
+        "no-new": 0,
+        "indent": ["error", 4],
+        "func-names": [ "off" ],
+        "comma-dangle": ["error", {
+            "arrays": "always-multiline",
+            "objects": "always-multiline",
+            "imports": "always-multiline",
+            "exports": "always-multiline",
+            "functions": "never"
+        }],
+        "prefer-arrow-callback": [ "off" ],
+        "import/prefer-default-export": "off",
+        "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+        "no-use-before-define": ["error", { "functions": true, "classes": false }],
+        "max-classes-per-file": ["error", 10],
+        "class-methods-use-this": ["off"],
+        "no-param-reassign": [2, { "props": false }]
+    }
+}
