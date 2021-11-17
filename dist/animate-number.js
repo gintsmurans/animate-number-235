@@ -35,7 +35,7 @@ export class AnimateNumber {
                 requestAnimationFrame(animate);
             }
             else {
-                this.updateElement(`${currentValue}`);
+                this.updateElement(`${valueTo}`);
             }
         };
         requestAnimationFrame(animate);
